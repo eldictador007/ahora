@@ -5,6 +5,7 @@
 
 a {
     text-decoration: none;
+    color: rgb(233, 123, 83);
 }
 
 
@@ -56,7 +57,7 @@ body {
  
  #contenido {
    grid-area: contenido;
-   background-color: rgb(54, 119, 175);
+   background-image: linear-gradient(rgb(28, 28, 83), rgb(114, 27, 114));
    padding: 5px;
    width: auto;
       
@@ -65,7 +66,7 @@ body {
     grid-area: nav;
     display: block;
     align-items: center;
-    background-color: coral;
+    background-image: linear-gradient(rgb(28, 28, 83), rgb(114, 27, 114));
     padding: 5px;
     
 
@@ -73,10 +74,7 @@ body {
 
  .nav li {
     text-align: right;
-    
-    
-    height: 50px;
-    
+    height: 50px;    
     
     list-style-type: none;
     display: flex;
@@ -86,7 +84,7 @@ body {
  }
 
  #contenido div {
-    background-color: rgb(54, 119, 175);
+    background-color: rgb(233, 123, 83);
     margin: 5px;
     padding: 15px;
     width: 100vh;
@@ -109,7 +107,7 @@ body {
     border-top: solid 15px coral;
     margin-top: 10px;
     max-height: 150px;
-    background-color: rgb(54, 119, 175);
+    background-image: linear-gradient(to top, rgb(28, 28, 83), rgb(114, 27, 114));
     /* justify-items: center;
     z-index: 1; */
     /*
