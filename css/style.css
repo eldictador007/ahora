@@ -23,63 +23,95 @@ body {
       "nav header"
       "nav contenido"
       "footer footer";
-    grid-template-rows: 20% 1fr 30%; 
-    grid-template-columns: 20% auto;
+    grid-template-rows: 15% 1fr 30%; 
+    grid-template-columns: 15% auto;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
     height: 100vh;
     margin: 0;    
  }
+
  .border {
     border: 1px solid black;
  }
 
- header h1{
+  h1, h2, h4 {
     grid-area: header;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    border: solid 10px coral;
+    display: block;
+    padding: 30px;
+    color: rgb(44, 231, 200);
+    
+    background-color: rgb(24, 26, 53);
+    justify-content: center;
+    border: solid 10px rgb(233, 123, 83);
     position: sticky;
     top: 5px;
     z-index: 1; /* lo trae al frente*/
  }
  
+ p, h2, h4 {
+    margin: 10px;
+    
+ }
  
  #contenido {
    grid-area: contenido;
+   background-color: rgb(54, 119, 175);
    padding: 5px;
    width: auto;
       
  }
- nav {
+ .nav {
+    grid-area: nav;
+    display: block;
+    align-items: center;
+    background-color: coral;
+    padding: 5px;
+    
+
+}
+
+ .nav li {
+    text-align: right;
+    
+    
+    height: 50px;
+    
+    
+    list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    grid-area: nav;
-    background-color: coral;
+    align-items: flex-end;
     
-  
  }
 
- #contenido {
+ #contenido div {
     background-color: rgb(54, 119, 175);
     margin: 5px;
+    padding: 15px;
+    width: 100vh;
  }
 
- .video {
-    margin: 5px;
+ .video, img {
+    margin: 0px;    
+    max-width: 100%;
+    height: auto;
  }
+
+ 
 
  
 .pie {
     grid-area: footer;
-    display: block;
-    border-top: solid 10px coral;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-top: solid 15px coral;
     margin-top: 10px;
-    max-height: 180px;
+    max-height: 150px;
     background-color: rgb(54, 119, 175);
-    justify-items: center;
-    z-index: 1;
+    /* justify-items: center;
+    z-index: 1; */
     /*
     position: absolute;
     text-align: center;
@@ -93,11 +125,11 @@ body {
     width: 40px;
     height: 40px;
     margin: 10px 10px 10px 10px;
-    list-style-type: none;
-   
-    
-        
+    list-style-type: none; 
+      
 }
+
+
 
 .pie__legal {
     display: block;
